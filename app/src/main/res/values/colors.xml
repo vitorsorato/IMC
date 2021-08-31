@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorfack">#fafafa</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#065fd4</color>
+    <color name="colorRed">#da1e1e</color>
+    <color name="colorGreen">#47bc91</color>
+    <color name="colorGreeen">#3da167</color>
+    <color name="colorBlue">#d2cfe6</color>
+    <color name="colorBack">#eaecf1</color>
+    <color name="colorGreyD">#818181</color>
+    <color name="colorGreyW">#bcbcbc</color>
+    <color name="colorOrange">#FFC700</color>
+    <color name="highlightedQuote">#2D7F1A</color>
+    <color name="colorText">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+
+    <color name="color1">#FFFFFF</color>
+    <color name="color2">#80cbc4</color>
+    <color name="color3">#ffbbb9</color>
+    <color name="color4">#F3E5F5</color>
+    <color name="color5">#BBDEFE</color>
+    <color name="colorlf">#00ffffff</color>
+
+    <color name="dockon">#065fd4</color>
+    <color name="docktw">#237342</color>
+    <color name="docktr">#000000</color>
+    <color name="dockfo">#a60a0a</color>
+    <color name="dockfi">#36565e</color>
+
+    <color name="docfon">#eaecf1</color>
+    <color name="docftw">#ecfff7</color>
+    <color name="docftr">#f9f3f3</color>
+    <color name="docffo">#fcebeb</color>
+    <color name="docffi">#e4f9ff</color>
+
+    <color name="docmea">#3D9BC5</color>
+
+    <color name="black_overlay">#66000000</color>
+
+
+</resources>

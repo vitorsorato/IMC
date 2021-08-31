@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TRES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="22.15"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/TRES2"
+        app:layout_constraintStart_toStartOf="@+id/ANIM"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TCLA"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Peso normal"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/TRES"
+        app:layout_constraintTop_toBottomOf="@+id/TRES" />
+
+    <TextView
+        android:id="@+id/TRES2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="24dp"
+        android:text="Arraste os números para cima ou para baixo. Os resultados serão apresentados em sequencia."
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/TRES3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CÁLCULO IMC"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/TRES2"
+        app:layout_constraintStart_toStartOf="@+id/TRES2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="280dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CONF_PESO"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/IMGW2"
+                    android:layout_width="2dp"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.46"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/shape_cb_fo" />
+
+                <NumberPicker
+                    android:id="@+id/ALT2"
+                    android:layout_width="45dp"
+                    android:layout_height="150dp"
+                    android:descendantFocusability="blocksDescendants"
+                    android:paddingHorizontal="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/IMGW2"
+                    app:layout_constraintTop_toTopOf="parent"></NumberPicker>
+
+                <NumberPicker
+                    android:id="@+id/ALT1"
+                    android:layout_width="35dp"
+                    android:layout_height="150dp"
+                    android:descendantFocusability="blocksDescendants"
+                    android:paddingHorizontal="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/IMGW2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></NumberPicker>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="100dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/shape_sb_on"
+                    android:gravity="center"
+                    android:text="Altura"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/shape_sb_on"
+                    android:gravity="center"
+                    android:text="metros"
+                    android:textAlignment="center"
+                    android:textColor="@color/docftr"
+                    android:textSize="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CONF_ALTU"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/IMGPES"
+                    android:layout_width="2dp"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.56"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/shape_cb_fo" />
+
+                <NumberPicker
+                    android:id="@+id/PES2"
+                    android:layout_width="35dp"
+                    android:layout_height="150dp"
+                    android:descendantFocusability="blocksDescendants"
+                    android:paddingHorizontal="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/IMGPES"
+                    app:layout_constraintTop_toTopOf="parent"></NumberPicker>
+
+                <NumberPicker
+                    android:id="@+id/PES1"
+                    android:layout_width="45dp"
+                    android:layout_height="150dp"
+                    android:descendantFocusability="blocksDescendants"
+                    android:paddingHorizontal="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/IMGPES"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></NumberPicker>
+
+                <TextView
+                    android:id="@+id/text_peso"
+                    android:layout_width="100dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/shape_sb_on"
+                    android:gravity="center"
+                    android:text="Peso"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_kg"
+                    android:layout_width="100dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/shape_sb_on"
+                    android:gravity="center"
+                    android:text="kg"
+                    android:textAlignment="center"
+                    android:textColor="@color/docftr"
+                    android:textSize="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/ANIM"
+        android:layout_width="95dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        tools:srcCompat="@drawable/anim_2_1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
